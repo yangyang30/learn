@@ -18,8 +18,9 @@ spring:
       # 定义连接空闲时间。最小10s,默认10m
       idle-timeout: 600000
       connection-test-query: SELECT 1 FROM DUAL
-mybatis:
+#两种模式 1注解模式  2简化后的XML模式，下面这种是简化XML模式
+#mybatis:
   # mybatis对应的映射文件路径
-  mapper-locations: classpath:mapper/*.xml
+  #mapper-locations: classpath:mapper/*.xml
   # mybatis对应的实体类
-  type-aliases-package: com.springcloud2.service
+  #type-aliases-package: com.springcloud2.service
